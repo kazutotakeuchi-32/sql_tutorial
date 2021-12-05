@@ -27,6 +27,10 @@ db接続
 
 mysql -u root -h db --protocol=tcp
 
+db選択
+
+use worldcup2014 ;
+
 ```
 
 ## Note
