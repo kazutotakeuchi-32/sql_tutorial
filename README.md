@@ -1,4 +1,6 @@
-## Insalation
+## Installation
+
+### インストール
 
 ```
 git clone https://github.com/kazutotakeuchi-32/sql_tutorial.git
@@ -25,7 +27,9 @@ db接続
 
 mysql -u root -h db --protocol=tcp
 
-
 ```
+
+## Note
+
 
 
