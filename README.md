@@ -21,7 +21,8 @@ docker-compose up
 ```
 DBコンテナ接続
 
-docker-compose run db /bin/bash
+docker-compose run db /bin/bash 
+docker-compose exec db /bin/bash
 
 db接続
 
