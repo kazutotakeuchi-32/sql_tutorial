@@ -1,5 +1,6 @@
 ## Installation
 
+
 ### インストール
 
 ```
@@ -33,9 +34,16 @@ db選択
 use worldcup2014 ;
 
 ```
+### schemaspy
 
-## DB画像
+### DB画像
 <img src="./db.png" alt="DB">
+
+### schemaspy画面
+
+```
+open worldcup_schema/index.html
+```
 
 ## Note
 
