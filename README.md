@@ -34,7 +34,7 @@ use worldcup2014 ;
 ```
 
 ## DB画像
-<img src="http://i.imgur.com/Jjwsc.jpg" alt="DB">
+<img src="./db.png" alt="DB">
 
 ## Note
 
