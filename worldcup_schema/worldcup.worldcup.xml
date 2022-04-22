@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="worldcup" schema="worldcup" type="MySQL - 5.5.68-MariaDB">
+   <tables>
+      <table catalog="worldcup" name="countries" numRows="32" remarks="" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ranking" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="group_name" nullable="true" remarks="" size="1" type="VARCHAR" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table catalog="worldcup" name="goals" numRows="188" remarks="" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="pairing_id" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="player_id" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="goal_time" nullable="true" remarks="" size="10" type="VARCHAR" typeCode="12"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table catalog="worldcup" name="goals_tmp" numRows="171" remarks="" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="my_country" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="enemy_country" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="goal_time" nullable="true" remarks="" size="10" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="player_name" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+      </table>
+      <table catalog="worldcup" name="pairings" numRows="144" remarks="" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="kickoff" nullable="true" remarks="" size="26" type="DATETIME" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="my_country_id" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="enemy_country_id" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table catalog="worldcup" name="pairings_tmp" numRows="144" remarks="" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="kickoff" nullable="true" remarks="" size="26" type="DATETIME" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="my_country" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="enemy_country" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+      </table>
+      <table catalog="worldcup" name="players" numRows="781" remarks="" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="country_id" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="uniform_num" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="position" nullable="true" remarks="" size="2" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="name" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="club" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="birth" nullable="true" remarks="" size="10" type="DATE" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="height" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="weight" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table catalog="worldcup" name="players_tmp" numRows="707" remarks="" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="country" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="uniform_num" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="position" nullable="true" remarks="" size="2" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="name" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="club" nullable="true" remarks="" size="50" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="birth" nullable="true" remarks="" size="10" type="DATE" typeCode="91"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="height" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="weight" nullable="true" remarks="" size="10" type="INT" typeCode="4"/>
+      </table>
+   </tables>
+</database>

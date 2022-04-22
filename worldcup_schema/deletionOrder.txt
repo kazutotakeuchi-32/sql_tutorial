@@ -1,0 +1,7 @@
+players_tmp
+players
+pairings_tmp
+pairings
+goals_tmp
+goals
+countries
